@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 246, 248);
+}
+/* === HEADER === */
+body header {
+  background-color: rgb(255, 190, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: Center;
+}
+body header:hover {
+  background-color: rgb(255, 180, 0);
+  transition: 1s;
+}
+body header div #tecBlog {
+  display: flex;
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+body header div #tec {
+  color: rgb(66, 65, 64);
+}
+body header div #blog {
+  color: white;
+}
+
+
+body header #iconDiv {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10vh;
+}
+body header #iconDiv.paddingOn {
+  padding-bottom: 1.5rem;
+}
+body header #iconDiv.paddingOff {
+  padding: 0;
+}
+
+
+/* ícone */
+body header #iconDiv #iconNav {
+  font-size: 5vh;
+  border: 1px solid rgb(66, 65, 64);
+  color: rgb(66, 65, 64);
+  padding: 2vh;
+}
+body header #iconDiv #iconNav.white {
+  transition: 0.5s;
+  color: white;
+  border-color: white;
+}
+body header #iconDiv #iconNav.black {
+  transition: 0.5s;
+  color: rgb(66, 65, 64);
+  border-color: rgb(66, 65, 64);
+}
+
+/* Background dos links RESPONSIVO*/
+body header nav.center {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 15vh;
+  top: 15.5vh;
+  background-color: rgb(66, 65, 64);
+  transition: 0.5s;
+}
+
+body header nav .nav-resp.show {
+  display: flex;
+}
+body header nav .nav-resp.none {
+  display: none;
+}
+
+/* Background dos links WINDOWS */
+body header nav {
+  padding: 1rem;
+  padding-top: 0.5rem;
+}
+body header nav a {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 800;
+}
+body header nav a:link,
+a:visited {
+  color: white;
+}
+body header nav a:hover {
+  background-color: white;
+  color: rgb(255, 180, 0);
+}
+
+
+@media (min-width: 720px) {
+  body header #iconDiv i {
+    display: none;
+  }
+  body header nav .nav-resp {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  body header {
+    width: 100vw;
+  }
+  body header nav .nav-wind {
+    display: none;
+  }
+  body header nav .nav-resp {
+    display: none;
+  }
+}

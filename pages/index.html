@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/global.css" />
+    <title>TecBlog</title>
+    <script
+      src="https://kit.fontawesome.com/6bd435b9e7.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="../public/global.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html" id="tecBlog">
+          <p id="tec">Tec</p>
+          <p id="blog">Blog</p>
+        </a>
+      </div>
+      <div id="iconDiv">
+        <i class="fas fa-align-justify" id="iconNav"></i>
+      </div>
+      <nav>
+        <a class="nav-wind" href="index.html">Home</a>
+        <a class="nav-wind" href="jogos.html">Jogos</a>
+        <a class="nav-wind" href="celulares.html">Celulares</a>
+        <a class="nav-wind" href="informatica.html">Informática</a>
+        <a class="nav-wind" href="eletronico.html">Eletrônicos</a>
+
+        <a class="nav-resp" id="nav-resp1" href="index.html">Home</a>
+        <a class="nav-resp" id="nav-resp2" href="jogos.html">Jogos</a>
+        <a class="nav-resp" id="nav-resp3" href="celulares.html">Celulares</a>
+        <a class="nav-resp" id="nav-resp4" href="informatica.html"
+          >Informática</a
+        >
+        <a class="nav-resp" id="nav-resp5" href="eletronico.html"
+          >Eletrônicos</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <div id="postDiv">
+        <section id="postBox">
+          <div>
+            <h2>Titulo da postagem 1</h2>
+            <p>postado em 20 março 2022</p>
+            <img src="../public/imagens/imagem1.jpg" />
+          </div>
+        </section>
+        <section id="postBox">
+          <div>
+            <h2>Titulo da postagem 1</h2>
+            <p>postado em 20 março 2022</p>
+            <img src="../public/imagens/imagem1.jpg" />
+          </div>
+        </section>
+        <section id="postBox">
+          <div>
+            <h2>Titulo da postagem 1</h2>
+            <p>postado em 20 março 2022</p>
+            <img src="../public/imagens/imagem1.jpg" />
+          </div>
+        </section>
+      </div>
+
+      <div id="postRec-Cat">
+        <section id="postRec">
+          <h2>Postagens recentes</h2>
+          <p>lOREMsapdokcxz</p>
+          <a>Leia mais</a>
+          <hr />
+          <p>LoremDKOPSACOKZ</p>
+          <a>Leia mais</a>
+          <hr />
+        </section>
+
+        <section id="category">
+          <h2>Categorias</h2>
+          <a>Jogos</a>
+          <a>Celulares</a>
+          <a>Informática</a>
+          <a>Eletrônicos</a>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  body main {
+    display: flex;
+    justify-content: center;
+  }
+
+  body main div,
+  body main section {
+    margin: 1%;
+  }
+  body main section {
+    background-color: white;
+    padding: 1%;
+  }
+  body main #postRec-Cat #category {
+    margin-top: 5%;
+  }
+  @media (max-width: 900px) {
+    body main {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  /* ESTILIZANDO AS BOX*/
+
+  /* pOSTAGENS */
+
+  body main #postBox {
+    width: 46vw;
+  }
+  body main #postBox h2 {
+    color: rgb(255, 190, 0);
+  }
+  body main #postBox p {
+    font-weight: 800;
+    margin-bottom: 3vh;
+  }
+  body main #postBox img {
+    width: 45vw;
+
+    padding-right: 0.8vw;
+  }
+
+  /* --- */
+  /* Postagens recentes e categorias*/
+  body main #postRec-Cat #category,
+  body main #postRec-Cat #postRec {
+    width: 20vw;
+  }
+  body main #postRec-Cat #postRec,
+  body main #postRec-Cat #postRec h2,
+  body main #postRec-Cat #category,
+  body main #postRec-Cat #category h2 {
+    padding: 2% 3.5%;
+  }
+  body main #postRec-Cat #category h2,
+  body main #postRec-Cat #postRec h2 {
+    margin-bottom: 2%;
+    color: rgb(66, 65, 64);
+  }
+  body main #postRec-Cat #postRec p,
+  body main #postRec-Cat #postRec a,
+  body main #postRec-Cat #category a {
+    padding: 0% 3.5%;
+  }
+  body main #postRec-Cat #postRec h2,
+  body main #postRec-Cat #category h2 {
+    background-color: rgb(170, 170, 170);
+  }
+  body main #postRec-Cat #category {
+    display: flex;
+    flex-direction: column;
+  }
+  body main #postRec-Cat #category a,
+  body main #postRec-Cat #postRec a {
+    color: rgb(255, 190, 0);
+  }
+  body main #postRec-Cat #postRec hr {
+    margin: 2% 0%;
+  }
+  body main #postRec-Cat #postRec hr:last-child {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    body main {
+      width: 100vw;
+    }
+    body main #postBox {
+      width: 50vh;
+      height: 50vh;
+      margin: 5vh 0vh;
+    }
+    body main #postBox h2 {
+      padding: 2vh 1vh;
+    }
+    body main #postBox p {
+      padding: 0vh 1vh;
+    }
+    body main #postBox img {
+      width: 48vh;
+      height: 33vh;
+      padding: 0vh 1vh;
+    }
+    body main #postRec-Cat {
+      display: flex;
+    }
+    body main #postRec-Cat #postRec,
+    body main #postRec-Cat #category {
+      width: 25vh;
+    }
+  }
+</style>
